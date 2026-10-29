@@ -1,0 +1,17 @@
+ShopNest 原版主题 × 洗护产品目录（MacBook）
+
+重要：这不是独立的新主题网站。本安装包在您的 Mac 上下载 GitHub 原项目 sti-technical/shopnest-ecommerce，保留其 HTML、CSS 和原有页面，仅修改初始商品资料与人民币/卢比展示为坚戈符号，并复制 10 张商品照片。
+
+第一步：从 https://nodejs.org/ 安装 Node.js LTS。
+第二步：联网，双击“安装并启动.command”。若 macOS 拒绝执行，请右键该文件选择“打开”，确认后运行；或打开终端执行 bash 安装并启动.command。
+第三步：安装后访问 http://localhost:3000 。后台在 http://localhost:3000/admin.html ，先通过 Login 页面登录。
+初始管理员账户：admin@shopnest.com，密码：admin123。（务必修改密码后再公开部署）
+
+洗护商品：9 个产品条目、10 张原图；绿色护发素其中 2 张同款，另一张已保留于 public/images/washcare 文件夹。
+图片所在：shopnest-ecommerce-main/public/images/washcare
+后台商品图片字段输入：/images/washcare/图片名称.jpg
+产品库存统一暂设为 10，请在后台修改成真实库存；价格采用图片上标示的批发价，不代表零售价。
+注意：此安装包需要联网第一次下载 GitHub 源码及 npm 依赖。后续本地运行一般无需网络，但部分网站外部资源可能依赖网络。
+注意：原版 ShopNest 的后台是填写图片 URL，不是直接上传照片的按钮。要新增本地图片，可先拷贝到 images/washcare 目录并填写对应的路径。
+注意：第一次启动时原版生成 shopnest.db 数据库，今后新增商品会保存在数据库中。备份 shopnest.db 很重要；不要随意删库。
+许可与归属：源代码来自 https://github.com/sti-technical/shopnest-ecommerce ，请遵守原仓库许可。
