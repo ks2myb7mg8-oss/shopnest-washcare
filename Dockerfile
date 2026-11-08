@@ -6,7 +6,7 @@ RUN curl -fL --retry 3 https://github.com/sti-technical/shopnest-ecommerce/archi
  && unzip -q original.zip \
  && mv shopnest-ecommerce-main /app \
  && cd /app && npm ci --omit=dev \
- && node /build/custom/cloud-customize.js
+ && node /build/custom/customize.js
 WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=3000
